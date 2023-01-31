@@ -1,0 +1,15 @@
+
+<app-header [parametro]="producto.nombre"></app-header>
+<app-hero-section [parametro2]="producto.imagen"></app-hero-section>
+
+<div class="product-container">
+    <div class="product-info">
+        <h1>{{producto.nombre}}</h1>
+        <p>{{producto.descripcion}}</p>
+        <ul>
+            <li *ngFor="let caracteristica of producto.caracteristicas">{{caracteristica}}</li>
+        
+        </ul>
+        
+    </div>
+</div>
